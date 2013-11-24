@@ -1,3 +1,3 @@
 # One Month Rails
 
-The new readme.
+Welcome to the new readme file.
