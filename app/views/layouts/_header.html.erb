@@ -20,7 +20,8 @@
       <li><%= link_to "home", root_path %></li>
       <li><%= link_to "about", about_path %></li>
       <% if user_signed_in? %>
-           <li><%= link_to 'new pin', new_pin_path %></li>
+           <li><%= link_to raw('<span class="glyphicon glyphicon-plus"></span>
+ new pin'), new_pin_path %></li>
       <li><%= link_to "account settings", edit_user_registration_path %></li>
       <li><%= link_to "log out", destroy_user_session_path, method: :delete %>
         <% else %>
